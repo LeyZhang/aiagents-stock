@@ -1,0 +1,33 @@
+# 🐂 领域层子模块
+"""
+领域层 - 包含实体、值对象和领域服务
+
+遵循领域驱动设计原则，将业务逻辑与基础设施分离。
+"""
+
+from ..core import (
+    # 重新导出核心领域对象，便于从domain子模块导入
+    BullMarketAnalyzer,
+    AnalysisConfig,
+    MarketData,
+    TradingSignal,
+    Portfolio,
+    RiskMetrics,
+    BacktestResult,
+    TradeRecord,
+    SignalAction,
+    RiskLevel,
+)
+
+__all__ = [
+    'BullMarketAnalyzer',
+    'AnalysisConfig',
+    'MarketData',
+    'TradingSignal',
+    'Portfolio',
+    'RiskMetrics',
+    'BacktestResult',
+    'TradeRecord',
+    'SignalAction',
+    'RiskLevel',
+]

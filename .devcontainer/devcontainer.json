@@ -1,0 +1,55 @@
+{
+  "name": "AI Stock Analysis System",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "streetsidesoftware.code-spell-checker",
+          "ms-python.python"
+        ],
+        "settings": {
+          "files.exclude": {
+            "**/.env": true
+          }
+        }
+      }
+    },
+    "runServices": {
+      "app": "pip install -r requirements.txt && python -m streamlit run app.py"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+          "streetsidesoftware.code-spell-checker",
+          "ms-python.python"
+        ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python3.12",
+        "files.exclude": {
+          "**/.env": true
+        },
+        "vscode-remote.fetchReleasesFromMirror": true
+      }
+    },
+    "settings": {
+    "python.defaultInterpreterPath": "/usr/local/bin/python3.12",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true
+  },
+  "features": {
+    "features": {
+      "untrusted_workspaces": {
+        "trust": {
+          "parent": true
+        }
+      }
+    }
+  },
+  "workspaceFolder": "/workspaces/aiagents-stock",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/aiagents-stock,type=bind"
+}

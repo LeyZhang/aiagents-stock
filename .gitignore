@@ -1,12 +1,150 @@
-/*.rar
-/test_akshare.py
-/test_fixed.py
-/test_pdf_export.py
-/test_pe_pb.py
-/venv
-/__pycache__
-# 环境变量文件
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+*.egg
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+*.mo
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.cursor/
+openspec/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+log/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+data/db/
+*.db-journal
+*.db-shm
+*.db-wal
+longhubang.db
+
+# Configuration (keep .env.example, ignore .env)
 .env
-/.cursor
-/openspec
-TradEnv/
+.env.local
+.env.*.local
+monitor_schedule_config.json
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+.tmp/
+tmp/
+temp/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Streamlit
+.streamlit/cache/
+
+# Data and generated files
+# Note: Use specific patterns instead of ignoring entire data/ directory
+data/downloads/
+data/uploads/
+charts/
+downloads/
+uploads/
+
+# Archive files
+*.rar
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Build artifacts
+*.whl
+*.so
+
+# OpenCode internal
+.opencode/
+
+# DevContainer
+.devcontainer/
+
+# Cloud deployment
+cloud/
+*.pem
+*.key
+
+# Test files (project-specific)
+test_*.py
+*_test.py
